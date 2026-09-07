@@ -1,0 +1,7 @@
+# the URI manifest is ~680MB -- too large for a plain git push (GitHub's hard
+# limit is 100MB without LFS). Host it separately and link to it from the README.
+data/*.parquet
+
+__pycache__/
+*.pyc
+.DS_Store

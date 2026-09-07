@@ -1,0 +1,28 @@
+atproto>=0.0.55
+aiohttp>=3.9
+aiofiles>=23.2
+# tested against atproto 0.0.65, aiohttp 3.13.5, aiofiles 25.1.0
+
+pandas>=2.0
+pyarrow>=14.0
+numpy>=1.24
+
+# generate_embeddings.py
+torch>=2.1
+sentence-transformers           # latest; Qwen3-VL-Embedding-2B needs recent multimodal support
+Pillow>=10.0
+opencv-python>=4.9              # video frame extraction -- enrich_posts.py downloads video for
+                                 # several labels at real volume, so this is not optional in practice
+
+# build_faiss_index.py, search_neighbors.py
+faiss-cpu>=1.8         # swap for faiss-gpu if you have one; index build is the slow step
+
+# call_hive.py
+requests>=2.31
+
+# cluster_umap_hdbscan.py
+optuna>=3.5
+# UMAP, HDBSCAN, and DBCV all run on GPU via RAPIDS (cuml, cudf, cupy, rmm) -- not
+# plain PyPI packages, install from NVIDIA's index for your CUDA version, e.g.:
+#   pip install cuml-cu12 cudf-cu12 rmm-cu12 --extra-index-url=https://pypi.nvidia.com
+# or via conda: see https://docs.rapids.ai/install
