@@ -210,12 +210,12 @@ yourself (via `enrich_posts.py`, pointed at these URIs instead of a fresh
 | `cid` | the post's content-version id at label time |
 | `label` | the label value |
 | `neg` | `true` if this row is a negation/retraction of a previously applied label |
-| `label_batch_source` | which internal collection batch this row came from (provenance only) |
 | `post_type` | the post's embed `$type` at label time |
 | `label_cts` | when the label (or negation) was created |
 | `post_created_at` | the post's own `createdAt` |
 
-~10.67M rows (10.46M applied + 0.21M negated). 
+~10.67M rows (10.46M applied + 0.21M negated), ~680MB. Too large to host directly in
+this repo — see `data/README.md` for the download link.
 
 ## Requirements
 
