@@ -222,3 +222,14 @@ this repo — see `data/README.md` for the download link.
 ```bash
 pip install -r requirements.txt
 ```
+
+## Citation
+
+```bibtex
+@article{singh2026characterizing,
+    author={Singh, Pushpdeep and Jarollahi, Sayeh and Majumdar, Ayan and Pahari, Vabuk and Chakraborty, Abhijnan and Gummadi, {Krishna Phani} and Weber, Ingmar and Dash, Abhisek},
+    title = {Characterizing Bluesky Content Moderation Service: From Automation of Service to Landscape of Harms},
+    journal = {arXiv preprint},
+    year = {2026}
+}
+```
